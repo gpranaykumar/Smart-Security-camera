@@ -1,0 +1,18 @@
+import time
+import os
+os.system("raspivid -o – -t 0 -n | cvlc -vvv stream:///dev/stdin –sout ‘#rtp{sdp=rtsp://:8554/}’ :demux=h264")
+
+
+from subprocess import *
+import time
+Popen('python .py')
+time.sleep(1)
+Popen('python .py')
+
+
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+python3 1.py & 2.py
+
+USERNAME: pi
+PASSWORD: raspberry
